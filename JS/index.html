@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script languague="JavaScript">
+    function changeText() {
+      var my_div = document.getElementById("my_div");
+      my_div.innerHTML = "Nội dung mới";
+    }
+
+    function changeColor() {
+      var my_div = document.getElementById("my_div");
+      my_div.style = "background-color: green";
+    }
+
+    function changeColorY() {
+      var my_div = document.getElementById("my_div");
+      my_div.style = "background-color: yellow";
+    }
+  </script>
+</head>
+
+<body>
+  <div id="my_div" style="background-color: yellow" onmouseover="changeColor()" onmouseleave="changeColorY()">
+    Nội dung ban đầu
+  </div>
+
+  <input type="button" id="change" value="thay đổi" onclick="changeText()" />
+</body>
+
+</html>
